@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#000000" >
+
+    <Button
+        android:id="@+id/medium"
+        style="@style/DashboardButton"
+        android:layout_above="@+id/hard"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:drawableLeft="@drawable/medium"
+        android:drawableStart="@drawable/medium" />
+
+    <Button
+        android:id="@+id/easy"
+        style="@style/DashboardButton"
+        android:layout_above="@+id/medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:drawableLeft="@drawable/easy"
+        android:drawableStart="@drawable/easy" />
+
+    <Button
+        android:id="@+id/hard"
+        style="@style/DashboardButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/easy"
+        android:layout_marginBottom="69dp"
+        android:drawableLeft="@drawable/hard"
+        android:drawableStart="@drawable/hard" />
+
+    <ImageView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dip"
+        android:src="@drawable/difficulty" />
+
+</RelativeLayout>

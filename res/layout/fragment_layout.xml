@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#000000" >
+
+       <Button
+           android:id="@+id/wild"
+          style="@style/DashboardButton"
+           android:layout_above="@+id/highscores"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="17dp"
+           android:drawableLeft="@drawable/iconwild"
+           android:drawableStart="@drawable/iconwild" />
+
+       <Button
+           android:id="@+id/highscores"
+           style="@style/DashboardButton"
+           android:layout_alignParentBottom="true"
+           android:layout_toLeftOf="@+id/sound"
+           android:drawableLeft="@drawable/highscores"
+           android:drawableStart="@drawable/highscores" />
+
+       <ToggleButton
+           android:id="@+id/sound"
+           style="@style/DashboardButton"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="33dp"
+           android:drawableLeft="@drawable/sound"
+           android:drawableStart="@drawable/sound"
+           android:textOn="Sound on"
+           android:textOff="Sound off" />
+
+       <Button
+           android:id="@+id/classic"
+           style="@style/DashboardButton"
+           android:layout_above="@+id/wild"
+           android:layout_toLeftOf="@+id/wild"
+           android:drawableLeft="@drawable/iconclassic"
+           android:drawableStart="@drawable/iconclassic" />
+
+       <Button
+           android:id="@+id/arcade"
+           style="@style/DashboardButton"
+           android:layout_above="@+id/wild"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="42dp"
+           android:drawableLeft="@drawable/iconarcade"
+           android:drawableStart="@drawable/iconarcade" />
+
+       
+</RelativeLayout>
